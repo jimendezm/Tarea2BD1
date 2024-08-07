@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Pacientes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Registro de Pacientes</h1>
+    <div id="main-container">
+        <div id="form-container">
+            <h2>Agregar Nuevo Paciente</h2>
+            <form id="patient-form">
+                <label for="cedula">Cédula:</label>
+                <input type="text" id="cedula" name="cedula" required>
+                
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+                
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" required>
+                
+                <button type="submit">Agregar</button>
+            </form>
+        </div>
+        <div id="patient-list">
+            <h2>Lista de Pacientes</h2>
+            <ul id="patients"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
